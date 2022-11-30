@@ -1,106 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-        h4 { text-align: left; color : palevioletred;}
-      
-        h3,li { /*태그 이름 셀렉터*/
-        color :brown}
-        
-        div>div>strong{ /*자식 셀렉터*/
-        background : yellow;
-        }
-        
-        ul strong {/*자손 셀렉터 */
-        color : dodgerblue;
-        }
-
-        .warning{/*class 섹렉터*/
-            color : red;
-        }
-
-        body.main{/*class 셀렉터*/
-            background: aliceblue;            
-        }
-
-        #list {/*id 셀렉터*/
-            background: mistyrose;
-        }
-
-        #list span{/*자손 셀렉터*/
-            color :forestgreen;
-        }
-
-        h3::first-letter{/*가상 클래스 셀렉터*/
-            color : red;
-        }
-
-        li:hover{/*가상 클래스 셀렉터*/
-            background: yellowgreen;
-        }
-    </style>
-  </head>
-<body class="main">
-<h1>시간표</h1>
-  <hr>
-  <table border = "1">
-    <caption>2022년 2학기</cation>
-    <thead>
-      <tr><th>시간</th><th>월요일</th><th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th><tr>
-    </thead>
-    <tbody>
-      <tr><th>11교시 A(19:10~19:35)</th><th>데이터마이닝</th><th>웹프로그래밍특론</th><th>-</th><th>-</th><th>-</th></tr>
-      <tr><th>11교시 B(19:35~20:00)</th><th>데이터마이닝</th><th>웹프로그래밍특론</th><th>-</th><th>-</th><th>-</th></tr>
-      <tr><th>12교시 A(20:00~20:25)</th><th>데이터마이닝</th><th>웹프로그래밍특론</th><th>-</th><th>-</th><th>-</th></tr>
-      <tr><th>12교시 B(20:25~20:50)</th><th>데이터마이닝</th><th>웹프로그래밍특론</th><th>-</th><th>-</th><th>-</th></tr>
-      <tr><th>13교시 A(20:50~21:15)</th><th>데이터마이닝</th><th>웹프로그래밍특론</th><th>-</th><th>-</th><th>-</th></tr>
-      <tr><th>13교시 B(21:15~21:40)</th><th>데이터마이닝</th><th>웹프로그래밍특론</th><th>-</th><th>-</th><th>-</th></tr>
-    </tbody>
-  </table>
-<p>I'm hosted with GitHub Pages.</p>
-  
-        <h3>라디오 박스 실습</h3>
-        <hr>
-        <p>웹프로그래밍특론의 교수는 누구인가요?</p>
-        <form>
-            <input type="radio" name="P" value="1">
-            이우선
-            <input type="radio" name="P" value="1">
-            우용태
-            <input type="radio" name="P" value="1">
-            정성환
-            <input type="radio" name="P" value="1">
-            이수현
-            <input type="radio" name="P" value="1">
-            차정원
-            <input type="radio" name="P" value="1">
-            정성욱
-            <input type="radio" name="P" value="1">
-            안동혁
-            <input type="radio" name="P" value="1">
-            강동현
-        </form>
-        <hr>
-        <details>
-            <summary>강동현</summary>
-            <p>이메일 : donghyun@changwon.ac.kr</p>
-        </details>
-        <hr>
-        <h4>과목명</h4>
-        <p><mark>웹프로그래밍특론</mark></p>
-        <mark>학습 진도(40/100)
-        <progress value="4" max="10"></progress></mark>
-  
-  <h3>Web Programming</h3>
-        <hr>
-        <div>
-            <div>2학기<strong>학습 내용</strong>입니다.</div>
-            <ul id = "list">
-                <li><span>HTML5</span></li>
-                <li><strong>CSS</strong></li>
-                <li>JAVASCRIPT</li>
-            </ul>
-            <div class="warning">60점 이하는 F</div>
+    <head>
+        <title>Factory Automation</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/20221118.css"/>   
+        <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>     
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <div>
+        <div class = "Upside">
+            <nav class="nav">
+                <ul class="nav__list">
+                <li class="nav__listlogo">
+                    <svg viewBox="0 0 640 512" width="100" title="infinity">
+                        <path d="M471.1 96C405 96 353.3 137.3 320 174.6 286.7 137.3 235 96 168.9 96 75.8 96 0 167.8 0 256s75.8 160 168.9 160c66.1 0 117.8-41.3 151.1-78.6 33.3 37.3 85 78.6 151.1 78.6 93.1 0 168.9-71.8 168.9-160S564.2 96 471.1 96zM168.9 320c-40.2 0-72.9-28.7-72.9-64s32.7-64 72.9-64c38.2 0 73.4 36.1 94 64-20.4 27.6-55.9 64-94 64zm302.2 0c-38.2 0-73.4-36.1-94-64 20.4-27.6 55.9-64 94-64 40.2 0 72.9 28.7 72.9 64s-32.7 64-72.9 64z" />
+                    </svg>
+                </li>
+                <li class="nav__listitem">PLC
+                    <ul class="nav__listitemdrop">
+                        <li>MITSUBUSHI</li>
+                        <li>LS Electric</li>                        
+                    </ul>
+                </li>
+                <li class="nav__listitem">Vision
+                    <ul class="nav__listitemdrop">
+                    <li>Cognex</li>
+                    <li>Showcase</li>
+                    </ul>
+                </li>
+                <li class="nav__listitem">Robot
+                    <ul class="nav__listitemdrop">
+                        <li>ABB</li>
+                        <li>HYUNDAI</li>
+                        <li>MITSUBUSHI</li>
+                    </ul>
+                </li>
+                </ul>
+            </nav>
         </div>
-</body>
+        <div class="Downside">
+            <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">  
+                            <div class="carousel-caption">
+                            <h3>First slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="item"> 
+                        <div class="carousel-caption">
+                          <h3>Second slide label</h3>
+                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="item"> 
+                        <div class="carousel-caption">
+                          <h3>Third slide label</h3>
+                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+            </div>
+            <!-- Controls -->
+        <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Javascript/robot_1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Javascript/robot_2.js"></script>
+        </div>
+    </div>
+
+    </body>
 </html>
